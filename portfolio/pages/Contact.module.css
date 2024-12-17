@@ -1,0 +1,93 @@
+
+/* Classe qui permet de rendre le formulaire plus moderne */
+.contactSection {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contactSubtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputGroup {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.inputField {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.inputField:focus {
+    border-color: #0078d4;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 120, 212, 0.2);
+}
+
+.inputField:focus + .inputLabel,
+.inputField:not(:placeholder-shown) + .inputLabel {
+    top: -10px;
+    left: 12px;
+    font-size: 0.9rem;
+    color: #0078d4;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.inputLabel {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.submitButton {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #005bb5;
+    transform: scale(1.02);
+}
+
+.submitButton:active {
+    transform: scale(0.98);
+}
