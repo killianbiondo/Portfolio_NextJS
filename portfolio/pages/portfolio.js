@@ -35,12 +35,12 @@ export default function Portfolio() {
                         <h3>Projet 2 : Mon jeu Pong</h3>
                         <p>Un petit jeu codée en Javascript.</p>
                         <a
-                            href="./pong.jpg"
-                            target="_blank"
+                            href="documents/mon_jeu.zip"
+                            download="mon_jeu.zip"
                             rel="noopener noreferrer"
                             className={styles.projectLink}
                         >
-                            Voir le projet
+                            Télécharger le jeu Pong
                         </a>
                     </div>
 
